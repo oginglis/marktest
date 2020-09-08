@@ -7,8 +7,7 @@ var { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   entry: {
     app: "./src/scripts/app.js",
-    vendor: Object.keys(package.dependencies),
-    otherpages: "./src/scripts/otherpages.js"
+    vendor: Object.keys(package.dependencies)
   },
   output: {
     filename: "[name].bundle.js",
@@ -33,7 +32,6 @@ module.exports = {
       filename: 'about.html',
       template: './src/about.html',
       favicon: './src/img/favicon.ico',
-      chunks: ['vendor', 'otherpages']
     }),
     new CleanWebpackPlugin(),
   ],

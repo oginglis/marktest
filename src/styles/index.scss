@@ -1,52 +1,42 @@
-@import './navbar/nav.scss';
-@import './navbar/hamburger.scss';
-@import './navbar/popout-sidebar.scss';
-@import './splash-screen/splash.scss';
-@import './holding-page/comingsoon.scss';
-@import './animation/fadeanimation.scss';
-@import './footer/footer.scss';
-
-$main-color: white;
-$main-font-color: black;
-
-
-@font-face {
-  font-family: 'FavoritPro-Regular';
-  src:  url('../fonts/FavoritPro-Regular.otf') format('otf');
-  font-style: normal;
+body,
+html {
+  margin: 0;
 }
 
-body {
-  font-family: 'FavoritPro-Regular';
-  background-color: $main-color;
-  overflow-x: hidden;
-  margin: 0px;
-  padding-top: 50px;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-body.fade-in{
-  opacity: 1;
-  transition: opacity 1s ease;
-}
-
-body.fade-out{
-  opacity: 0;
-  transition: opacity 1s ease;
-
-}
-
-.font-color {
-  color: $main-font-color;
-  font-family: 'FavoritPro-Regular';
-}
-
-.margins {
-  margin: 20px 60px;
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 80vw;
+  justify-content: space-around;
 }
 
 
+.text-align {
+  text-align: center;
+}
 
+.blobone {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.blobtwo {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.blobthree {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+canvas {
+  touch-action: none;
+  width: 100%;
+}
